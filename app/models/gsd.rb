@@ -1,0 +1,2 @@
+class Gsd < ApplicationRecord
+end

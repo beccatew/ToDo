@@ -1,0 +1,13 @@
+<h1>Edit Item</h1>
+<%= form_for @gsd do |f| %>
+  <%= f.label :item %>
+  <%= f.text_field :item %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.label :priority %>
+  <%= f.text_field :priority %>
+
+  <%= f.submit %>
+<% end %>

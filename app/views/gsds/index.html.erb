@@ -1,0 +1,9 @@
+<h1>Get Shit Done(s)</h1>
+
+<% @gsds.each do |gsd| %>
+  <h2><%= gsd.item %></h2>
+  <p><%= link_to 'New To Do Item', new_gsd_path %></p>
+  <%= link_to 'Get Shit Done Items', gsd_path(gsd) %>
+  <%= link_to 'Edit Item', edit_gsd_path(gsd) %>
+  <%= link_to 'Destroy Item', gsd, method: :delete %>
+<% end %>
