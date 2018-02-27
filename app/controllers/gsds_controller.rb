@@ -37,7 +37,7 @@ end
 
 def destroy
   Gsd.find(params[:id]).destroy
-  redirect_to Gsds_path
+  redirect_to gsds_path
 end
 
   private
